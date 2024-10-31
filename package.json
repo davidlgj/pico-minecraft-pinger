@@ -1,0 +1,25 @@
+{
+  "name": "pico-minecraft-pinger",
+  "version": "1.0.0",
+  "main": "bundle.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=bundle.js --external:wifi --external:net --external:button --external:storage --external:rp2 --external:http",
+    "dev": "npm run build && kaluma flash ./bundle.js --shell",
+    "shell": "kaluma shell",
+    "flash": "npm run build && kaluma flash ./bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "David Jensen <david.lgj@gmail.com>",
+  "license": "MIT",
+  "description": "Kaluma based firmware for Raspebrry Pi pico that pings a minecraft server to get its status",
+  "dependencies": {
+    "@kaluma/cli": "^1.4.0",
+    "@types/varint": "^6.0.3",
+    "@typescript/lib-dom": "npm:@types/kaluma",
+    "esbuild": "^0.24.0",
+    "neopixel": "github:niklauslee/neopixel",
+    "typescript": "^5.6.3",
+    "varint": "^6.0.0"
+  }
+}

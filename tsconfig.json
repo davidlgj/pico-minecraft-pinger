@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./out/",
+    "module": "CommonJS",
+    "target": "es2015",
+    "strict": true,
+    "noImplicitAny": true,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "lib": ["ES6", "DOM"],
+
+    "baseUrl": "types",
+    "typeRoots": ["./types"]
+  },
+  "include": ["src/**/*", "global.d.ts"]
+}
