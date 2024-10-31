@@ -3,6 +3,9 @@
 Pings a minecraft every 5 min server getting the player count and lights neopixel leds more and
 more depending on playercount.
 
+![pico-minecraft-pinger-lysande](https://github.com/user-attachments/assets/10065b2e-5e0f-4c23-9086-c24ebe9fe014)
+
+
 ## Setup Pico
 See https://kalumajs.org/ for installation instructions of the kaluma js firmware.
 
